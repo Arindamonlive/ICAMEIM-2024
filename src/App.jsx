@@ -11,12 +11,16 @@ function App() {
  return (
     <Router>
       <Nav />
-      <Routes>
+      <Home/>
+      <Committee/>
+      <Speakers/>
+      <Sessions/>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/committee" element={<Committee />} />
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/sessions" element={<Sessions />} />
-      </Routes>
+      </Routes> */}
       <Footer />
     </Router>
  );
