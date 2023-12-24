@@ -1,8 +1,9 @@
+import img from '../assets/Speakers.png';
 const Speakers = () => {
     return (
-      <div id="Speakers" className="bg-gray-200 lg:py-2">
-        <h1 className="text-[24px] h-full lg:py-2 flex flex-col justify-center items-center font-semibold">
-          Speakers
+      <div id="Speakers" className="bg-gray-100 lg:py-2">
+        <h1 className="" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}>
+          <ul className='text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white'>Speakers</ul>
         </h1>
   
         <h2 className="text-[22px] lg:px-10 py:5">Plenary Speaker I:</h2>

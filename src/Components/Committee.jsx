@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
+import img from '../assets/Meeting.jpg';
 
 const Committee =()=>{
     return(
         <div id="Committee" className="lg:py-2">
-                <h1 className="text-[24px] h-full lg:py-2 flex flex-col justify-center items-center font-semibold">Committee Members
+                <h1 className="" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}><ul className='text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white'>Committee Members</ul>
                 </h1>
                 <h2 className="text-[22px] lg:px-10 py:5">Patron:
                     <ul className="">

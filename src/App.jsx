@@ -6,6 +6,12 @@ import Committee from './Components/Committee';
 import Speakers from './Components/Speakers';
 import Sessions from './Components/Sessions';
 import Footer from './Components/Footer';
+import Tutorials from './Components/Tutorials';
+import Paper from './Components/Paper';
+import Registration from './Components/Registration';
+import Program from './Components/Program';
+import Contacts from './Components/Contacts';
+import Sponsors from './Components/Sponsors';
 
 function App() {
  return (
@@ -21,6 +27,12 @@ function App() {
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/sessions" element={<Sessions />} />
       </Routes> */}
+      <Tutorials/>
+      <Paper/>
+      <Registration/>
+      <Program/>
+      <Contacts/>
+      <Sponsors/>
       <Footer />
     </Router>
  );
