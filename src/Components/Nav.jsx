@@ -20,17 +20,17 @@ const Nav=()=>{
                     <Link spy={true} smooth={true} to="Speakers">
                         <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Speakers</li>
                     </Link>
-                    <Link spy={true} smooth={true} to="Sessions">
+                    {/* <Link spy={true} smooth={true} to="Sessions">
                         <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Sessions</li>
-                    </Link>
-                    <Link spy={true} smooth={true} to="Tutorials">
+                    </Link> */}
+                    {/* <Link spy={true} smooth={true} to="Tutorials">
                         <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Tutorials</li>
+                    </Link> */}
+                    <Link spy={true} smooth={true} to="Papers">
+                        <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Papers</li>
                     </Link>
-                    <Link spy={true} smooth={true} to="Paper">
-                        <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Paper</li>
-                    </Link>
-                    <Link spy={true} smooth={true} to="Registrations">
-                        <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Registrations</li>
+                    <Link spy={true} smooth={true} to="Registration">
+                        <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Registration</li>
                     </Link>
                     <Link spy={true} smooth={true} to="Program">
                         <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Program</li>
@@ -39,7 +39,7 @@ const Nav=()=>{
                         <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">News</li>
                     </Link> */}
                     <Link spy={true} smooth={true} to="Contacts">
-                        <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Contacts</li>
+                        <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Contact Us</li>
                     </Link>
                     <Link spy={true} smooth={true} to="Sponsors">
                         <li className="my-4 py-4 border-b border-slate-800 hover:bg-slate-800 hover:rounded">Sponsors</li>
@@ -65,17 +65,17 @@ const Nav=()=>{
                             <Link spy={true} smooth={true} to="Speakers">
                                 <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Speakers</li>
                             </Link>
-                            <Link spy={true} smooth={true} to="Sessions">
+                            {/* <Link spy={true} smooth={true} to="Sessions">
                                 <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Sessions</li>
-                            </Link>
-                            <Link spy={true} smooth={true} to="Tutorials">
+                            </Link> */}
+                            {/* <Link spy={true} smooth={true} to="Tutorials">
                                 <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Tutorials</li>
+                            </Link> */}
+                            <Link spy={true} smooth={true} to="Papers">
+                                <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Call for Papers</li>
                             </Link>
-                            <Link spy={true} smooth={true} to="Paper">
-                                <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Paper</li>
-                            </Link>
-                            <Link spy={true} smooth={true} to="Registrations">
-                                <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Registrations</li>
+                            <Link spy={true} smooth={true} to="Registration">
+                                <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Registration</li>
                             </Link>
                             <Link spy={true} smooth={true} to="Program">
                                 <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Program</li>
@@ -84,7 +84,7 @@ const Nav=()=>{
                                 <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">News</li>
                             </Link> */}
                             <Link spy={true} smooth={true} to="Contacts">
-                                <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Contacts</li>
+                                <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Contact Us</li>
                             </Link>
                             <Link spy={true} smooth={true} to="Sponsors">
                                 <li className="hover:text-blue-600 transition border-b-2 border-slate-100 hover:border-blue-600 cursor-pointer">Sponsors</li>

@@ -7,7 +7,7 @@ import Speakers from './Components/Speakers';
 import Sessions from './Components/Sessions';
 import Footer from './Components/Footer';
 import Tutorials from './Components/Tutorials';
-import Paper from './Components/Paper';
+import Papers from './Components/Papers';
 import Registration from './Components/Registration';
 import Program from './Components/Program';
 import Contacts from './Components/Contacts';
@@ -20,15 +20,15 @@ function App() {
       <Home/>
       <Committee/>
       <Speakers/>
-      <Sessions/>
+      {/* <Sessions/> */}
       {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/committee" element={<Committee />} />
         <Route path="/speakers" element={<Speakers />} />
         <Route path="/sessions" element={<Sessions />} />
       </Routes> */}
-      <Tutorials/>
-      <Paper/>
+      {/* <Tutorials/> */}
+      <Papers/>
       <Registration/>
       <Program/>
       <Contacts/>

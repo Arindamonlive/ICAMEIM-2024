@@ -17,22 +17,26 @@ const Home = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
+  
   };
 
   return (
     <div id="Home" className="lg:px-0 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center">
       <div className="w-full">
-        <Slider {...sliderSettings}>
-          <div>
-            <img src={img1} alt="Slide 1" />
-          </div>
-          <div>
-            <img src={img2} alt="Slide 2" />
-          </div>
-          {/* <div>
-            <img src={img3} alt="Slide 3" />
-          </div> */}
-        </Slider>
+
+        <div className="max-w-7xl mx-auto mb-8">
+          <Slider {...sliderSettings}className="border-4 border-blue-200 rounded-lg overflow-hidden shadow-glow">
+            <div>
+              <img src={img1} alt="Slide 1" className="w-full"/>
+            </div>
+            <div>
+              <img src={img2} alt="Slide 2" className="w-full"/>
+            </div>
+            {/* <div>
+              <img src={img3} alt="Slide 3" />
+            </div> */}
+          </Slider>
+        </div>
             <span>
                 <div className='lg:px-10 lg:py-2 flex flex-row justify-center lg:items-center'>
                     <div className ="h-full lg:py-0 flex flex-col justify-center lg:items-start items-center container">
