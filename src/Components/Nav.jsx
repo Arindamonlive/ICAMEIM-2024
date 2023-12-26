@@ -1,13 +1,18 @@
-import {Link} from "react-scroll";
-import {FaTimes} from "react-icons/fa";
-import {CiMenuFries} from "react-icons/ci";
-import { useState } from "react";
+import { Link } from "react-scroll";
+import { FaTimes } from "react-icons/fa";
+import { CiMenuFries } from "react-icons/ci";
+import { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Nav=()=>{
-    const [click,setClick]=useState(false)
-    const handleClick=()=> setClick(!click);
+const Nav = () => {
+    const [click, setClick] = useState(false);
 
-    const content=
+
+
+    const handleClick = () => setClick(!click);
+
+    const content=(
         <>
             <div className="lg:hidden block absolute top-16 w-full left-0 right-0 ng-slate-900 transition">
                 <ul className="text-center text-xl p-20">
@@ -46,10 +51,10 @@ const Nav=()=>{
                     </Link>
                 </ul>
             </div>
-        </>
+        </>);
     return(
         <nav style={{ position: "sticky", top: 0, zIndex: 1000 }}>
-            <div className="bg-orange-600 h-10vh flex justify-between z-50 text-white lg:py-1 px-20 py-4">
+            <div  className="bg-orange-600 h-10vh flex justify-between z-50 text-white lg:py-1 px-20 py-4">
                 <div className="flex items-center flex-1">
                     <span className="text-3xl font-bold">ICAMEIM-2024</span>
                 </div>

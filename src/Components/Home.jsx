@@ -3,10 +3,10 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import img from '../assets/tLogo.png';
-import img2 from '../assets/SL.jpg';
-import img1 from '../assets/SLc.jpg';
-
-
+import img2 from '../assets/SS1.png';
+import img1 from '../assets/SS2.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Home = () => {
 
   const sliderSettings = {
@@ -54,8 +54,8 @@ const Home = () => {
                                 engineering and technology, innovators, entrepreneurs as well as researchers to receive original high quality
                                 research papers for this conference.</p> 
                     </div>
-                    <div className="h-full lg:py-0 flex flex-col justify-center lg:gap-0 items-center mb-1 text-black container">
-                        <img data-aos="fade-up" src={img} width={300} height={250} className='mb-0' alt=""/>
+                    <div data-aos="fade-down" data-aos-anchor-placement="top-bottom"className="h-full lg:py-0 flex flex-col justify-center lg:gap-0 items-center mb-1 text-black container">
+                        <img src={img} width={300} height={250} className='mb-0' alt=""/>
                             <div className="text-[20px] mt-auto font-semibold text-red-600">
                                 <h2 className="">Contact Person</h2>
                             </div>
@@ -65,9 +65,9 @@ const Home = () => {
                     </div>
                 </div>
             </span>
-            <div className="lg:px-10 py-2 bg-gray-200">
+            <div data-aos="fade-up" className="lg:px-10 py-2 bg-gray-200">
                   <h1 className="text-[24px] font-semibold mb-1 leading-normal  text-black text-center">Conference Theme</h1>
-                  <p data-aos="fade-left" className='text-[16px] text-black text-justify'>
+                  <p  className='text-[16px] text-black text-justify'>
                     Manufacturing is defined as transforming raw materials into physical products using man, machines, tools, and
                     processing. Since the last decades, the vision of manufacturing has undergone a paradigm shift. The current
                     manufacturing era is marked by highly agile, networked enterprises that dexterously employ information, talent,

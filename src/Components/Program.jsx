@@ -1,7 +1,17 @@
 import img from '../assets/Schedule.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React, { useEffect } from 'react';
 const Program=()=>{
+  useEffect(() => {
+    AOS.init({
+        easing: 'ease-in-quad',
+        delay: 0,
+        duration: 1200
+    });
+}, []);
     return(
-        <div id="Program" className="font-arial">
+        <div data-aos='fade-up' id="Program" className="font-arial">
       <h1
         className=""
         style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
@@ -13,7 +23,7 @@ const Program=()=>{
       <p className="text-2xl flex items-center justify-center">
                 Will be updated Soon
               </p>
-      <div className="flex flex-row justify-center items-center">
+      <div data-aos='fade-in'className="flex flex-row justify-center items-center">
         <div className="container flex items-center mb-6">
           <div className="lg:items-end">
             <ul className="lg:py-6 text-center">

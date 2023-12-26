@@ -1,8 +1,19 @@
 import img from '../assets/Registration.jpg';
+import { useState, useEffect } from "react";
+import { Link } from "react-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Registration = () => {
+  useEffect(() => {
+    AOS.init({
+        easing: 'ease-in-quad',
+        delay: 0,
+        duration: 1200
+    });
+}, []);
   return (
-    <div id="Registration" className="font-arial">
+    <div data-aos ='fade-left' id="Registration" className="font-arial">
       <h1
         className=""
         style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
@@ -20,7 +31,7 @@ const Registration = () => {
           <div className="lg:items-end">
             <ul className="lg:py-6 text-center">
               <div className="flex">
-                <div className="container items-center text-center">
+                <div data-aos="fade-in" className="container items-center text-center">
                   <h1 className='text-4xl'>National Candidate</h1>
                   <table className="table-auto mx-auto">
                     <thead>
@@ -32,34 +43,34 @@ const Registration = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="px-4 py-2">&#x2713;</td>
-                        <td className="px-4 py-2">Academia:</td>
+                        <td className="px-4 py-2"></td>
+                        <td className="px-4 py-2 text-left">Academia:</td>
                         <td className="px-4 py-2 font-semibold">INR 3000</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-2">&#x2713;</td>
-                        <td className="px-4 py-2">R&D Centres & Industry:</td>
+                        <td className="px-4 py-2"></td>
+                        <td className="px-4 py-2 text-left">R&D Centres & Industry:</td>
                         <td className="px-4 py-2 font-semibold">INR 3000</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-2">&#x2713;</td>
-                        <td className="px-4 py-2">Full Time Research Scholars and Students:</td>
+                        <td className="px-4 py-2"></td>
+                        <td className="px-4 py-2 text-left">Full Time Research Scholars and Students:</td>
                         <td className="px-4 py-2 font-semibold">INR 2500</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-2">&#x2713;</td>
-                        <td className="px-4 py-2">Female Registration (Student):</td>
+                        <td className="px-4 py-2"></td>
+                        <td className="px-4 py-2 text-left">Female Registration (Student):</td>
                         <td className="px-4 py-2 font-semibold">INR 2000</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-2">&#x2713;</td>
-                        <td className="px-4 py-2">Guest / Attendee:</td>
+                        <td className="px-4 py-2"></td>
+                        <td className="px-4 py-2 text-left">Guest / Attendee:</td>
                         <td className="px-4 py-2 font-semibold">INR 1000</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
-                <div className="container items-center text-center">
+                <div data-aos="fade-in" className="container items-center text-center">
                   <h1 className='text-4xl'>International Candidates</h1>
                   <table className="table-auto mx-auto">
                     <thead>
@@ -71,18 +82,18 @@ const Registration = () => {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className="px-4 py-2">&#x2713;</td>
-                        <td className="px-4 py-2">Academia & Industry:</td>
+                        <td className="px-4 py-2"></td>
+                        <td className="px-4 py-2 text-left">Academia & Industry:</td>
                         <td className="px-4 py-2 font-semibold">$ 250</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-2">&#x2713;</td>
-                        <td className="px-4 py-2">Full Time Research Scholars and Students:</td>
+                        <td className="px-4 py-2"></td>
+                        <td className="px-4 py-2 text-left">Full Time Research Scholars and Students:</td>
                         <td className="px-4 py-2 font-semibold">$ 150</td>
                       </tr>
                       <tr>
-                        <td className="px-4 py-2">&#x2713;</td>
-                        <td className="px-4 py-2">Guest / Attendee:</td>
+                        <td className="px-4 py-2"></td>
+                        <td className="px-4 py-2 text-left">Guest / Attendee:</td>
                         <td className="px-4 py-2 font-semibold">$ 100</td>
                       </tr>
                     </tbody>

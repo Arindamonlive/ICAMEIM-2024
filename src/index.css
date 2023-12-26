@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.custom-bg-gold {background-color: #FFD700;}
+.custom-bg-silver {background-color: #C0C0C0;}
+@keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 5px 0 rgba(255, 213, 79, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px 10px rgba(255, 213, 79, 0.4);
+    }
+  }
+  @keyframes red {
+    0%, 100% {
+      box-shadow: 0 0 5px 0 rgba(255, 0, 0, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.4);
+    }
+  }
+  .shadow-glow-red:hover {
+    animation: red 1s infinite;
+  }
+  @keyframes silver {
+    0%, 100% {
+      box-shadow: 0 0 5px 0 rgba(192, 192, 192, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px 10px rgba(192, 192, 192, 0.4);
+    }
+  }
+  .shadow-glow-red:hover {
+    animation: silver 1s infinite;
+  }
+.neno-button{transition: all 0.3s ease-in-out;}
+.neno-button:hover{box-shadow: 0 0 15px rgb(206,71,193);}
+  

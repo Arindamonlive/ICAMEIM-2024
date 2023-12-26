@@ -1,8 +1,18 @@
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Footer =() => {
     const currentYear = new Date().getFullYear();
+    useEffect(() => {
+        AOS.init({
+            easing: 'ease-in-quad',
+            delay: 0,
+            duration: 1200
+        });
+    }, []);
 
     return (
-        <footer className='bg-orange-600 items-center text-white lg:px-48 py-2'>
+        <footer data-aos='fade-up' className='bg-orange-600 items-center text-white lg:px-48 py-2'>
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="mb-4 md:mb-0">
                     <span className="text-3xl font-semibold text-white py-2 ">
@@ -14,12 +24,21 @@ const Footer =() => {
                     <h2 className="text-[22px] font-semibold text-white py-2 ">
                         Important Links
                     </h2>
-                    <ul className="text-[16px] my-2">
-                            <li className='my-0'>Brochure</li>
-                            <li className='my-0'>Template file</li>
-                            <li className='my-0'>Abstract Template File</li>
-                            <li className='my-0'>Writing Tips</li>
+                    <ul className="text-[16px] my-2 text-blue-200">
+                        <li className="my-0">
+                            <a href="src/assets/ME Conference Brochure_2024.pdf" download>Brochure</a>
+                        </li>
+                        <li className="my-0">
+                            <a href="src/assets/Template.docx" download>Template file</a>
+                        </li>
+                        <li className="my-0">
+                            <a href="src/assets/Abstract_Template.docx" download>Abstract Template File</a>
+                        </li>
+                        <li className="my-0">
+                            <a href="src/assets/Submission guidelines.pdf" download>Writing Tips</a>
+                        </li>
                         </ul>
+
                 </div>
                 <div className="mb-4 md:mb-0">
                     <h2 className="text-[22px] font-semibold text-white py-2 ">Contact</h2>
@@ -28,7 +47,7 @@ const Footer =() => {
                 </div>
 
             </div>
-                  <div className="text-white text-[15px] text-center mt-5">
+                  <div className="text-white text-[12px] text-center mt-5">
         &copy; {currentYear} ICAMEIM-2024. All rights reserved. Developed By Mr. Arindam Chakraborty +91-9830410335/arindamckbt@gmail.com
       </div>
         </footer>

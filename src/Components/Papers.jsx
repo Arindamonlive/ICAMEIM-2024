@@ -1,17 +1,29 @@
 import img from '../assets/Papers.jpg';
+import { Link } from "react-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useState, useEffect } from "react";
+
 const Papers=()=>{
+    useEffect(() => {
+        AOS.init({
+            easing: 'ease-in-quad',
+            delay: 0,
+            duration: 1200
+        });
+    }, []);
     return(
-        <div id="Papers" className='font-arial'>
+        <div data-aos="fade-down" id="Papers" className='font-arial'>
             <h1 className="" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}><ul className='text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white'>Call for Papers</ul></h1>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
    
-                        <div className="container">
+                        <div data-aos='fade-right' className="container">
                             {/* <h2 className="text-2xl lg:text-4xl font-semibold mb-4">Special Session</h2> */}
                             <div className="flex items-start mb-6">
                                 <div className="ml-5">
                                     <h2 className="text-2xl lg:text-4xl font-semibold mb-4 lg:py-4">Topics</h2>
                                 </div>
-                                <div className="items-end">
+                                <div data-aos='fad-right'className="items-end">
                                     <ul className="lg: py-6">
                                         <p className="text-[18px] lg:px-10 py-2 text-justify">
                                         Papers are invited on the following areas, but not limited to:
@@ -31,7 +43,7 @@ const Papers=()=>{
                         </div>
 
                         
-                        <div className="container bg-gray-200">
+                        <div data-aos='fade-left'className="container bg-gray-200">
                             {/* <h2 className="text-2xl lg:text-4xl font-semibold mb-4">Important Dates</h2> */}
                             <div className="flex items-start mb-6">
                                 <div className="items-start">
