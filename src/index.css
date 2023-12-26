@@ -36,4 +36,5 @@
   }
 .neno-button{transition: all 0.3s ease-in-out;}
 .neno-button:hover{box-shadow: 0 0 15px rgb(206,71,193);}
+.navbar {  position: sticky;  top: 0;  z-index: 0;}
   
