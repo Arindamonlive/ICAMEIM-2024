@@ -1,18 +1,9 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 const Footer =() => {
     const currentYear = new Date().getFullYear();
-    useEffect(() => {
-        AOS.init({
-            easing: 'ease-in-quad',
-            delay: 0,
-            duration: 1200
-        });
-    }, []);
+
 
     return (
-        <footer data-aos='fade-up' className='bg-orange-600 items-center text-white lg:px-48 py-2'>
+        <footer className='bg-orange-600 items-center text-white lg:px-48 py-2'>
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4">
                 <div className="mb-4 md:mb-0">
                     <span className="text-3xl font-semibold text-white py-2 ">

@@ -11,7 +11,7 @@ const Committee =()=>{
         });
     }, []);
     return(
-        <div data-aos='fade-right' id="Committee" className="lg:py-2">
+        <div data-aos='fade-down' id="Committee" className="lg:py-2">
                 <h1 className="" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}><ul className='text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white'>Committee Members</ul>
                 </h1>
                 <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Patron:

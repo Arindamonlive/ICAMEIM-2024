@@ -2,14 +2,9 @@ import { Link } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import { useState, useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const Nav = () => {
     const [click, setClick] = useState(false);
-
-
-
     const handleClick = () => setClick(!click);
 
     const content=(
@@ -54,7 +49,7 @@ const Nav = () => {
         </>);
     return(
         <nav style={{ position: "sticky", top: 0, zIndex: 1000 }}>
-            <div  className="bg-orange-600 h-10vh flex justify-between z-50 text-white lg:py-1 px-20 py-4">
+            <div className="bg-orange-600 h-10vh flex justify-between z-50 text-white lg:py-1 px-20 py-4">
                 <div className="flex items-center flex-1">
                     <span className="text-3xl font-bold">ICAMEIM-2024</span>
                 </div>

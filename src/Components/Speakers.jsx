@@ -12,7 +12,7 @@ const Speakers = () => {
     });
 }, []);
     return (
-      <div data-aos='fade-left' id="Speakers" className="bg-gray-100 lg:py-2">
+      <div data-aos='fade-down' id="Speakers" className="bg-gray-100 lg:py-2">
         <h1 className="" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}>
           <ul className='text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white'>Speakers</ul>
         </h1>

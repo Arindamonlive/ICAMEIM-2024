@@ -13,7 +13,7 @@ const Registration = () => {
     });
 }, []);
   return (
-    <div data-aos ='fade-left' id="Registration" className="font-arial">
+    <div data-aos ='fade-down' id="Registration" className="font-arial">
       <h1
         className=""
         style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
