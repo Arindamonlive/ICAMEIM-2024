@@ -16,9 +16,11 @@ const Papers=()=>{
         <div data-aos="fade-down" id="Papers" className='font-arial'>
             <h1 className="" style={{ backgroundImage: `url(${img})`, backgroundSize: "cover" }}><ul className='text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white'>Call for Papers</ul></h1>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        
    
                         <div data-aos='fade-down' className="container">
                             {/* <h2 className="text-2xl lg:text-4xl font-semibold mb-4">Special Session</h2> */}
+                            <a href="https://docs.google.com/document/d/12UOL_OB5jiTighaQr82zeOHmGaAiIyUr/edit?usp=sharing&ouid=107928771669049446287&rtpof=true&sd=true"  className='text-[18px] lg:px-10 text-justify items-center font-bold text-blue-800'download>Template Download</a>
                             <div className="flex items-start mb-6">
                                 <div className="ml-5">
                                     <h2 className="text-2xl lg:text-4xl font-semibold mb-4 lg:py-4">Topics</h2>
@@ -40,50 +42,51 @@ const Papers=()=>{
                                     </ul>
                                 </div>
                             </div>
+                            
                         </div>
 
                         
-                        <div data-aos='fade-up'className="container bg-gray-200">
+                        <div data-aos='fade-up'className="container gap-8 bg-gray-200">
                             {/* <h2 className="text-2xl lg:text-4xl font-semibold mb-4">Important Dates</h2> */}
                             <div className="flex items-start mb-6">
                                 <div className="items-start">
-                                    <h2 className="text-2xl lg:text-4xl font-semibold mb-4 lg:py-4 px-8">Important Dates</h2>
+                                    <h2 className="text-2xl lg:text-4xl font-semibold mb-4 lg:py-4 px-2">Important Dates</h2>
                                 </div>
                                 <div className="items-end">
                                     <ul className="lg:py-6">
                                     <table className="table-auto mx-auto">
                                     <thead>
                                         <tr>
-                                            <th className="px-4 py-2"></th>
-                                            <th className="px-4 py-2">Details</th>
-                                            <th className="px-4 py-2">Date</th>
+                                            <th className="px-2 py-2"></th>
+                                            <th className="px-2 py-2">Details</th>
+                                            <th className="px-2 py-2">Date</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td className="px-4 py-2">&#x2713;</td>
-                                            <td className="px-4 py-2">Deadline for full paper Submission:</td>
-                                            <td className="px-4 py-2 font-semibold">30<sup>th</sup> January, 2024</td>
+                                            <td className="px-0 py-2">&#x2713;</td>
+                                            <td className="px-0 py-2">Deadline for full paper Submission:</td>
+                                            <td className="px-0 py-2 font-semibold">30<sup>th</sup> January, 2024</td>
                                         </tr>
                                         <tr>
-                                            <td className="px-4 py-2">&#x2713;</td>
-                                            <td className="px-4 py-2">Notification of Paper Acceptance:</td>
-                                            <td className="px-4 py-2 font-semibold">6<sup>th</sup> February, 2024</td>
+                                            <td className="px-0 py-2">&#x2713;</td>
+                                            <td className="px-0 py-2">Notification of Paper Acceptance:</td>
+                                            <td className="px-0 py-2 font-semibold">6<sup>th</sup> February, 2024</td>
                                         </tr>
                                         <tr>
-                                            <td className="px-4 py-2">&#x2713;</td>
-                                            <td className="px-4 py-2">Camera-ready Paper Submission Deadline:</td>
-                                            <td className="px-4 py-2 font-semibold">15<sup>th</sup> February, 2024</td>
+                                            <td className="px-0 py-2">&#x2713;</td>
+                                            <td className="px-0 py-2">Camera-ready Paper Submission Deadline:</td>
+                                            <td className="px-0 py-2 font-semibold">15<sup>th</sup> February, 2024</td>
                                         </tr>
                                         <tr>
-                                            <td className="px-4 py-2">&#x2713;</td>
-                                            <td className="px-4 py-2">Deadline of Registration:</td>
-                                            <td className="px-4 py-2 font-semibold">20<sup>th</sup> February, 2024</td>
+                                            <td className="px-0 py-2">&#x2713;</td>
+                                            <td className="px-0 py-2">Deadline of Registration:</td>
+                                            <td className="px-0 py-2 font-semibold">20<sup>th</sup> February, 2024</td>
                                         </tr>
                                         <tr>
-                                            <td className="px-4 py-2">&#x2713;</td>
-                                            <td className="px-4 py-2">Conference Date:</td>
-                                            <td className="px-4 py-2 font-semibold">11<sup>th</sup> to 13<sup>th</sup> March, 2024</td>
+                                            <td className="px-0 py-2">&#x2713;</td>
+                                            <td className="px-0 py-2">Conference Date:</td>
+                                            <td className="px-0 py-2 font-semibold">11<sup>th</sup> to 13<sup>th</sup> March, 2024</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -94,7 +97,7 @@ const Papers=()=>{
                     </div>
 
                 
-            
+                        
         </div>
     )
 }
