@@ -52,8 +52,8 @@ const Home = () => {
               <div className="flex flex-col">
                     <div className="">
                     <div className="w-full">
-                              <div className="max-w-7xl mx-auto mb-8">
-                                <Slider {...sliderSettings}className="border-4 border-blue-200 rounded-lg overflow-hidden shadow-glow">
+                              <div className="max-w-7xl px-12 pb-8">
+                                <Slider {...sliderSettings}className="">
                                   <div>
                                     <img src={img1} alt="Slide 1" className="w-full"/>
                                   </div>

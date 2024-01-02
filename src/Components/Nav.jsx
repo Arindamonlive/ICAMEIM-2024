@@ -2,6 +2,7 @@ import {Link} from "react-scroll";
 import {FaTimes} from "react-icons/fa";
 import {CiMenuFries} from "react-icons/ci";
 import {useState} from "react";
+// import {Link} from "react-dom";
 
 const Nav = () => {
     const [click, setClick]= useState(false);
@@ -31,7 +32,7 @@ const Nav = () => {
             </div>
         </>
     return(
-        <nav style={{ position: "sticky", top: 0, zIndex: 0 }}>
+        <nav style={{ position: "sticky", top: 0, zIndex: 1000 }}>
             <div className="bg-orange-600 h-10vh flex justify-between z-50 text-white lg:py-1 px-20 py-4">
                 <div className="flex items-center flex-1">
                     <span className="text-3xl font-bold">ICAMEIM-2024</span>
