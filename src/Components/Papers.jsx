@@ -40,6 +40,7 @@ const Papers=()=>{
                                         <li className="flex items-center py-1 px-8">&#x2713; Micro and Nano Manufacturing and Precision Engineering</li>
                                         <li className="flex items-center py-1 px-8">&#x2713; Miscellaneous Topics in Mechanical Engineering</li>
                                     </ul>
+                                    <p>Submit Your paper at:<ul className='font font-semibold text-blue-800'>icameim2024@gmail.com</ul></p>
                                 </div>
                             </div>
                             
