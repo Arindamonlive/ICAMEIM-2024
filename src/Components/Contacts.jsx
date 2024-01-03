@@ -21,7 +21,7 @@ const Contacts = () => {
             <p className="text-2xl flex items-center justify-center">
                 Feel free to contact us with your Questions and Query.
             </p>
-            <div className="flex flex-row">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
             <div data-aos='fade-in'className="container flex items-center mb-6">
                 <div className="lg:items-end">
                     <ul className="lg:py-2 text-center">
@@ -54,7 +54,7 @@ const Contacts = () => {
                 </form>
             </div> */}
 
-                  <div data-aos='fade-in' className="container items-center mb-6">
+                  <div data-aos='fade-in' className="container items-center mb-6 bg-slate-200">
           <h1 className='text-4xl items-center text-center'>Write to us</h1>
           <form
             action=""
