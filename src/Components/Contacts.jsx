@@ -11,7 +11,7 @@ const Contacts = () => {
         });
     }, []);
     return (
-        <div data-aos='fade-right'id="Contacts" className="font-arial flex flex-col">
+        <div data-aos='fade-top' id="Contacts" className="font-arial flex flex-col">
             <h1 className="" style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
             >
                 <ul className="text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white">

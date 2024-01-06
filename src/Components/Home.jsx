@@ -11,10 +11,13 @@ import ss4 from '../assets/4.png';
 import ss5 from '../assets/5.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
 
 
 const Home = () => {
+  const [taglineIndex, setTaglineIndex] = useState(0);
+  const taglines = ['Submit your paper as an Early Bird by January 26, 2024, to avail of the special registration fee of only Rs 1500/- INR.',];
 
   const sliderSettings = {
     dots: true,
@@ -37,20 +40,43 @@ const Home = () => {
     autoplaySpeed: 1500,
   
   };
+  const interval = setInterval(() => {
+    setTaglineIndex((prevIndex) => (prevIndex + 1) % taglines.length);
+  }, 6000);
 
   useEffect(() => {
     AOS.init({
-        easing: 'ease-in-quad',
-        delay: 0,
-        duration: 1200
+      easing: 'ease-in-quad',
+      delay: 0,
+      duration: 1200,
     });
-}, []);
+  
+    const interval = setInterval(() => {
+      setTaglineIndex((prevIndex) => (prevIndex + 1) % taglines.length);
+    }, 10000);
+  
+    // Clear the interval when the component unmounts
+    return () => clearInterval(interval);
+  }, []);
+
+  const taglineContainerStyle = {
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
+    padding: 5,
+    margin: 0,
+  };
+
+  const cyclicTaglineStyle = {
+    animation: 'moveLeftToRight 20s linear infinite',
+  };
 
   return (
-    <div id="Home" className="lg:px-0 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center">
+    <div className="">
+      <div id="Home" className="lg:px-0 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center">
       
-              <div className="flex flex-col">
+              <div className="flex flex-col items-center">
                     <div className="">
+
                     <div className="w-full">
                               <div className="max-w-7xl px-12 pb-8">
                                 <Slider {...sliderSettings}className="">
@@ -65,7 +91,24 @@ const Home = () => {
                                   </div> */}
                                 </Slider>
                               </div>
+                              <div style={taglineContainerStyle} className="tagline-container bg-yellow-500 text-2xl font-bold text-red-600">
+                                          <p style={cyclicTaglineStyle} className="cyclic-tagline ">{taglines[taglineIndex]}</p>
+                                          <style>
+                                            {`
+                                              @keyframes moveLeftToRight {
+                                                0% {
+                                                  transform: translateX(100%);
+                                                }
+                                                100% {
+                                                  transform: translateX(-100%);
+                                                }
+                                              }
+                                            `}
+                                          </style>
+                                        </div>
+
                                   <span>
+
                                       <div className='lg:px-10 lg:py-2 flex flex-row justify-center lg:items-center'>
                                           <div className ="h-full lg:py-0 flex flex-col justify-center lg:items-start items-center container">
                                                   <h1 data-aos="fade-right" className="text-[24px] font-semibold mb-1 leading-normal  text-black">
@@ -80,7 +123,7 @@ const Home = () => {
                                                       the gap between outcome of research and its implementation in real world/ Industry. The conference will also
                                                       provide an opportunity to interact and network with world renowned experts in the field of industry leaders,
                                                       engineering and technology, innovators, entrepreneurs as well as researchers to receive original high quality
-                                                      research papers for this conference.</p> 
+                                                      research papers for this conference.</p> <p className="text-[20px] text-green-600 font-bold ">Accepted papers will be published in Reputed/Scopus index journals.</p>
                                           </div>
                                           <div data-aos="fade-down" data-aos-anchor-placement="top-bottom"className="h-full lg:py-0 flex flex-col justify-center lg:gap-0 items-center mb-1 text-black container">
                                               <img src={img} width={300} height={250} className='mb-0' alt=""/>
@@ -93,6 +136,7 @@ const Home = () => {
                                           </div>
                                       </div>
                                   </span>
+
                                   <div data-aos="fade-up" className="lg:px-10 py-2 bg-gray-200">
                                         <h1 className="text-[24px] font-semibold mb-1 leading-normal  text-black text-center">Conference Theme</h1>
                                         <p  className='text-[16px] text-black text-justify'>
@@ -149,7 +193,7 @@ const Home = () => {
                     </div>
               </div>
     </div>
-    
+    </div>
   );
 };
 
