@@ -12,7 +12,31 @@ import ss5 from '../assets/5.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useEffect, useState } from 'react';
+import img3 from '../assets/jl1.jpg';
+import img4 from '../assets/jl2.jpg';
+import img5 from '../assets/jl3.jpeg';
+import img6 from '../assets/jl4.jpeg';
+import styled, { keyframes } from 'styled-components';
 
+
+const glowAnimation = keyframes`
+  0% {
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.7), 0 0 10px rgba(255, 0, 0, 0.5);
+    color: rgba(255, 0, 0, 1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7), 0 0 30px rgba(0, 255, 0, 0.5);
+    color: rgba(0, 255, 0, 1);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.7), 0 0 10px rgba(0, 0, 255, 0.5);
+    color: rgba(0, 0, 255, 1);
+  }
+`;
+
+const GlowingTagline = styled.p`
+  animation: ${glowAnimation} 4s ease-in-out infinite;
+`;
 
 
 const Home = () => {
@@ -55,7 +79,6 @@ const Home = () => {
       setTaglineIndex((prevIndex) => (prevIndex + 1) % taglines.length);
     }, 10000);
   
-    // Clear the interval when the component unmounts
     return () => clearInterval(interval);
   }, []);
 
@@ -67,7 +90,7 @@ const Home = () => {
   };
 
   const cyclicTaglineStyle = {
-    animation: 'moveLeftToRight 20s linear infinite',
+    // animation: 'moveLeftToRight 20s linear infinite',
   };
 
   return (
@@ -91,8 +114,8 @@ const Home = () => {
                                   </div> */}
                                 </Slider>
                               </div>
-                              <div style={taglineContainerStyle} className="tagline-container bg-yellow-500 text-2xl font-bold text-red-600">
-                                          <p style={cyclicTaglineStyle} className="cyclic-tagline ">{taglines[taglineIndex]}</p>
+                              <div style={taglineContainerStyle} className="tagline-container text-center bg-yellow-500 text-2xl font-bold text-red-600">
+                                          <GlowingTagline className="cyclic-tagline ">{taglines[taglineIndex]}</GlowingTagline>
                                           <style>
                                             {`
                                               @keyframes moveLeftToRight {
@@ -123,9 +146,12 @@ const Home = () => {
                                                       the gap between outcome of research and its implementation in real world/ Industry. The conference will also
                                                       provide an opportunity to interact and network with world renowned experts in the field of industry leaders,
                                                       engineering and technology, innovators, entrepreneurs as well as researchers to receive original high quality
-                                                      research papers for this conference.</p> <p className="text-[20px] text-green-600 font-bold ">Accepted papers will be published in Reputed/Scopus index journals.</p>
+                                                      research papers for this conference.</p> 
                                           </div>
-                                          <div data-aos="fade-down" data-aos-anchor-placement="top-bottom"className="h-full lg:py-0 flex flex-col justify-center lg:gap-0 items-center mb-1 text-black container">
+                                          <div data-aos="fade-down" data-aos-anchor-placement="top-bottom"className="h-full lg:py-0 px-10 flex flex-col justify-center lg:gap-0 items-center mb-1 text-black container">
+                                              <div className="flex flex-row">
+
+                                              </div>
                                               <img src={img} width={300} height={250} className='mb-0' alt=""/>
                                                   <div className="text-[20px] mt-auto font-semibold text-red-600">
                                                       <h2 className="">Contact Person</h2>
@@ -133,6 +159,20 @@ const Home = () => {
                                                       <p className='font-bold text-gray-800'>Dr. Somnath Das</p>
                                                       <p className='text-gray-800'>Phone/Whatsapp: <span className='font-semibold'>+91-9332313510</span></p>
                                                       <p className='text-gray-800'>Write to: <span className='font-semibold'>icameim2024@gmail.com</span></p>
+                                                      <p className="text-[20px] text-green-600 text-center px-auto ">Accepted papers will be published in <p className='font-bold'>Scrivener-Wiley Publishing, Springer, CRC press</p>, and <p className='font-bold'>Taylor & Francis group</p></p>
+                                                      <div className="flex flex-row">
+                                                        <div className="">
+                                                        <img src={img5} width={200} height={150} className='mb-0' alt=""/>
+                                                        <img src={img3} width={200} height={150} className='mb-0' alt=""/>
+                                                        </div>
+                                                        <div className="">
+                                                        <img src={img6} width={200} height={150} className='mb-0' alt=""/>
+                                                        <img src={img4} width={200} height={150} className='mb-0' alt=""/>
+                                                        </div>
+                                                      </div>
+                                                      
+
+                                                      
                                           </div>
                                       </div>
                                   </span>
@@ -188,7 +228,7 @@ const Home = () => {
                                         </Slider>
                                       </div>
                               </div>
-                              <div className="text-[20px] font-semibold text-center">Capturing Moments, Inspiring Futures: Unveiling the Visual Tapestry of ICIRIE-2023</div>
+                              <div className="text-[20px] font-semibold text-center">Capturing Moments, Inspiring Futures: Unveiling the Visual Tapestry of International Seminar(ICIRIE-2023)</div>
                           </div>
                     </div>
               </div>
