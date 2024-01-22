@@ -20,7 +20,7 @@ const Papers=()=>{
    
                         <div data-aos='fade-down' className="container">
                             {/* <h2 className="text-2xl lg:text-4xl font-semibold mb-4">Special Session</h2> */}
-                            <a href="https://docs.google.com/document/d/12UOL_OB5jiTighaQr82zeOHmGaAiIyUr/edit?usp=sharing&ouid=107928771669049446287&rtpof=true&sd=true"  className='text-[18px] lg:px-10 text-justify items-center font-bold text-blue-800'download>Template Download</a>
+                            <a href="https://drive.google.com/uc?export=download&id=12UOL_OB5jiTighaQr82zeOHmGaAiIyUr"  className='text-[18px] lg:px-10 text-justify items-center font-bold text-blue-800'download>Template Download</a>
                             <div className="flex items-start mb-6">
                                 <div className="ml-5">
                                     <h2 className="text-2xl lg:text-4xl font-semibold mb-4 lg:py-4">Topics</h2>

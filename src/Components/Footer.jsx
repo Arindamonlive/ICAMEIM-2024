@@ -17,10 +17,10 @@ const Footer =() => {
                     </h2>
                     <ul className="text-[16px] my-2 text-blue-200">
                         <li className="my-0">
-                            <a href="https://drive.google.com/file/d/1ixmGc70Ca06QBAK8QjbBwpk5nC8fPPAA/view?usp=sharing" download>Brochure</a>
+                            <a href="https://drive.usercontent.google.com/download?id=1ww-oQ3HYdY8vr-_JhllF351caRqj2L6U&export=download&authuser=0" download>Brochure</a>
                         </li>
                         <li className="my-0">
-                            <a href="https://docs.google.com/document/d/12UOL_OB5jiTighaQr82zeOHmGaAiIyUr/edit?usp=sharing&ouid=107928771669049446287&rtpof=true&sd=true" download>Template file</a>
+                            <a href="https://drive.google.com/uc?export=download&id=12UOL_OB5jiTighaQr82zeOHmGaAiIyUr" download>Template file</a>
                         </li>
                         {/* <li className="my-0">
                             <a href="src/assets/Abstract_Template.docx" download>Abstract Template File</a>
