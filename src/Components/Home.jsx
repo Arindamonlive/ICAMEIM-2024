@@ -41,7 +41,7 @@ const GlowingTagline = styled.p`
 
 const Home = () => {
   const [taglineIndex, setTaglineIndex] = useState(0);
-  const taglines = ['Submit your paper as an Early Bird by January 26, 2024, to avail of the special registration fee of only Rs 1500/- INR.',];
+  const taglines = ['Submit your paper as an Early Bird by February 27, 2024, to avail of the special registration fee of only Rs 1500/- INR.',];
 
   const sliderSettings = {
     dots: true,

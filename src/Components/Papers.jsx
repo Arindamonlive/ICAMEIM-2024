@@ -67,22 +67,22 @@ const Papers=()=>{
                                         <tr>
                                             <td className="px-0 py-2">&#x2713;</td>
                                             <td className="px-0 py-2">Deadline for full paper Submission:</td>
-                                            <td className="px-0 py-2 font-semibold">30<sup>th</sup> January, 2024</td>
+                                            <td className="px-0 py-2 font-semibold">10<sup>th</sup> February, 2024</td>
                                         </tr>
                                         <tr>
                                             <td className="px-0 py-2">&#x2713;</td>
                                             <td className="px-0 py-2">Notification of Paper Acceptance:</td>
-                                            <td className="px-0 py-2 font-semibold">6<sup>th</sup> February, 2024</td>
+                                            <td className="px-0 py-2 font-semibold">16<sup>th</sup> February, 2024</td>
                                         </tr>
                                         <tr>
                                             <td className="px-0 py-2">&#x2713;</td>
                                             <td className="px-0 py-2">Camera-ready Paper Submission Deadline:</td>
-                                            <td className="px-0 py-2 font-semibold">15<sup>th</sup> February, 2024</td>
+                                            <td className="px-0 py-2 font-semibold">25<sup>th</sup> February, 2024</td>
                                         </tr>
                                         <tr>
                                             <td className="px-0 py-2">&#x2713;</td>
                                             <td className="px-0 py-2">Deadline of Registration:</td>
-                                            <td className="px-0 py-2 font-semibold">20<sup>th</sup> February, 2024</td>
+                                            <td className="px-0 py-2 font-semibold">28<sup>th</sup> February, 2024</td>
                                         </tr>
                                         <tr>
                                             <td className="px-0 py-2">&#x2713;</td>
