@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import img from '../assets/Speakers.png';
+import img1 from '../assets/S1.jpeg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -17,24 +18,25 @@ const Speakers = () => {
           <ul className='text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white'>Speakers</ul>
         </h1>
   
-        <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker I:</h2>
+        <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker I(13<sup>th</sup> March 2023):</h2>
         <ul>
-          <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600">Speaker Name</li>
+        <img src={img1} width={100} height={250} className='mb-0 border-spacing-1 border-blue-500 rounded-lg shadow-md mx-4' alt="speaker"/>
+          <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600 font-bold">Dr. Saikat Ranjan Maity</li>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
-            Abstract:
+            Tittle:
             <p data-aos="fade-in"className="text-[14px] lg:px-10 text-gray-600 font-bold">
-              Abstract details
+            Laser-aided direct metal deposition
             </p>
           </div>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
-            Bio-Sketch:
+          Designation:
             <p data-aos="fade-in"className="text-[14px] lg:px-10 text-gray-600 font-bold">
-              Speakers biography
+            Associate Professor, Department of Mechanical Engineering, National Institute of Technology Silchar
             </p>
           </div>
         </ul>
   
-        <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker II:</h2>
+        {/* <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker II:</h2>
         <ul>
           <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600">Speaker Name</li>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
@@ -49,9 +51,9 @@ const Speakers = () => {
               Speakers biography
             </p>
           </div>
-        </ul>
+        </ul> */}
   
-        <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker III:</h2>
+        {/* <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker III:</h2>
         <ul>
           <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600">Speaker Name</li>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
@@ -66,9 +68,9 @@ const Speakers = () => {
               Speakers biography
             </p>
           </div>
-        </ul>
+        </ul> */}
   
-        <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker IV:</h2>
+        {/* <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker IV:</h2>
         <ul>
           <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600">Speaker Name</li>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
@@ -83,7 +85,7 @@ const Speakers = () => {
               Speakers biography
             </p>
           </div>
-        </ul>
+        </ul> */}
       </div>
     );
   };
