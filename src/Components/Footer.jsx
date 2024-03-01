@@ -17,7 +17,7 @@ const Footer =() => {
                     </h2>
                     <ul className="text-[16px] my-2 text-blue-200">
                         <li className="my-0">
-                            <a href="https://drive.usercontent.google.com/download?id=1ww-oQ3HYdY8vr-_JhllF351caRqj2L6U&export=download&authuser=0" download>Brochure</a>
+                            <a href="https://drive.usercontent.google.com/u/0/uc?id=1beOmx-wC_pjSJtB_TzG43WhGZupwmds3&export=download" download>Brochure</a>
                         </li>
                         <li className="my-0">
                             <a href="https://drive.google.com/uc?export=download&id=12UOL_OB5jiTighaQr82zeOHmGaAiIyUr" download>Template file</a>
