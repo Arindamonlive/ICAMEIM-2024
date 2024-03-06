@@ -31,6 +31,7 @@ function App() {
       {loading ? (
         <div className="spinner-container">
           <img src={img} alt="Logo" className="spinner" />
+          
         </div>
       ) : (
         <>

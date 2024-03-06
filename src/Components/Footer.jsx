@@ -39,7 +39,10 @@ const Footer =() => {
 
             </div>
                   <div className="text-white text-[12px] text-center mt-5">
-        &copy; {currentYear} ICAMEIM-2024. All rights reserved. Developed By Mr. Arindam Chakraborty +91-9830410335/arindamckbt@gmail.com
+                  &copy; {currentYear} ICAMEIM-2024. All rights reserved. Developed By Mr. Arindam Chakraborty 
+  +91-9830410335/arindamckbt@gmail.com | Website:  
+  <a href="https://www.rjrinfinity.com/" target="_blank" rel="noopener noreferrer" className="font-semibold"> 
+    www.rjrinfinity.com</a>
       </div>
         </footer>
     )

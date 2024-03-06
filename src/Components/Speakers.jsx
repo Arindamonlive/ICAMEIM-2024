@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import img from '../assets/Speakers.png';
 import img1 from '../assets/S1.jpeg';
+import img2 from '../assets/S2.jpg';
+import img3 from '../assets/S3.jpg';
+import img4 from '../assets/S4.jpg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -18,7 +21,7 @@ const Speakers = () => {
           <ul className='text-[55px] lg:py-5 ml-10 flex flex-col justify-center font-bold text-white'>Speakers</ul>
         </h1>
   
-        <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker I(13<sup>th</sup> March 2023):</h2>
+        <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker ((11 to 13)<sup>th</sup> March 2023):</h2>
         <ul>
         <img src={img1} width={100} height={250} className='mb-0 border-spacing-1 border-blue-500 rounded-lg shadow-md mx-4' alt="speaker"/>
           <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600 font-bold">Dr. Saikat Ranjan Maity</li>
@@ -35,57 +38,58 @@ const Speakers = () => {
             </p>
           </div>
         </ul>
-  
-        {/* <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker II:</h2>
+
         <ul>
-          <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600">Speaker Name</li>
+        <img src={img2} width={100} height={250} className='mb-0 border-spacing-1 border-blue-500 rounded-lg shadow-md mx-4' alt="speaker"/>
+          <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600 font-bold">Prof Gouranga Lal Datta</li>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
-            Abstract:
+            Tittle:
             <p data-aos="fade-in"className="text-[14px] lg:px-10 text-gray-600 font-bold">
-              Abstract details
+            Foundry Technology
             </p>
           </div>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
-            Bio-Sketch:
+          Designation:
             <p data-aos="fade-in"className="text-[14px] lg:px-10 text-gray-600 font-bold">
-              Speakers biography
+            Retired Dean, IIT Kharagpur 
             </p>
           </div>
-        </ul> */}
-  
-        {/* <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker III:</h2>
+        </ul>
+
         <ul>
-          <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600">Speaker Name</li>
+        <img src={img4} width={100} height={250} className='mb-0 border-spacing-1 border-blue-500 rounded-lg shadow-md mx-4' alt="speaker"/>
+          <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600 font-bold">Dr. Biswanath Doloi</li>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
-            Abstract:
+            Tittle:
             <p data-aos="fade-in"className="text-[14px] lg:px-10 text-gray-600 font-bold">
-              Abstract details
+            An overview on laser-based manufacturing
             </p>
           </div>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
-            Bio-Sketch:
+          Designation:
             <p data-aos="fade-in"className="text-[14px] lg:px-10 text-gray-600 font-bold">
-              Speakers biography
+            Professor, Department of Production Engineering, Jadavpur University 
             </p>
           </div>
-        </ul> */}
-  
-        {/* <h2 data-aos="fade-in"className="text-[22px] lg:px-10 py:5">Plenary Speaker IV:</h2>
+        </ul>
+
         <ul>
-          <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600">Speaker Name</li>
+        <img src={img3} width={100} height={250} className='mb-0 border-spacing-1 border-blue-500 rounded-lg shadow-md mx-4' alt="speaker"/>
+          <li data-aos="fade-in"className="text-[18px] lg:px-5 text-gray-600 font-bold">Dr. Nilrudra Mandal</li>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
-            Abstract:
+            Tittle:
             <p data-aos="fade-in"className="text-[14px] lg:px-10 text-gray-600 font-bold">
-              Abstract details
+            Coatings & Surface Engineering 
             </p>
           </div>
           <div data-aos="fade-in"className="text-[16px] lg:px-10 text-gray-600 font-semibold">
-            Bio-Sketch:
+          Designation:
             <p data-aos="fade-in"className="text-[14px] lg:px-10 text-gray-600 font-bold">
-              Speakers biography
+            Senior Principal Scientist and Heading the Coatings & Surface Engineering Group at CSIR-CMERI, Durgapur
             </p>
           </div>
-        </ul> */}
+        </ul>
+        
       </div>
     );
   };
