@@ -21,14 +21,15 @@ const Program=()=>{
         </ul>
       </h1>
       <p className="text-2xl flex items-center justify-center">
-                Will be updated Soon
+      <a href="https://drive.usercontent.google.com/u/0/uc?id=12XW2qXEwmggWGKVnJcCdJJbr919pTp2T&export=download"  className='text-[26px] lg:px-10 text-justify items-center font-bold text-blue-800'download>Click Here to Download the Schedule</a>
+
               </p>
       <div data-aos='fade-in'className="flex flex-row justify-center items-center">
         <div className="container flex items-center mb-6">
           <div className="lg:items-end">
             <ul className="lg:py-6 text-center">
               <div className="flex">
-                <div className="container items-center text-center">
+                {/* <div className="container items-center text-center">
                   <h1 className='text-4xl'>Day and Date 1</h1>
                   <table className="table-auto mx-auto">
                     <thead>
@@ -70,7 +71,7 @@ const Program=()=>{
                       </tr>
                     </tbody>
                   </table>
-                </div>
+                </div> */}
               </div>
             </ul>
           </div>
